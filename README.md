@@ -1,4 +1,4 @@
-## 📒 Java RMI Notebook
+## 📒 Java RMI notebook
 
 Anotações dos meus aprendizados sobre Java RMI (Remote method invocation).
 
