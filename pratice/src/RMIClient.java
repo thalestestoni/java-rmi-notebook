@@ -8,7 +8,7 @@ public class RMIClient {
 
         try {
             HelloWorld helloWorld = (HelloWorld) Naming.lookup("rmi://"+rmiRegistryHostname+"/"+rmiServiceName);
-            helloWorld.sayHello(who);
+            System.out.println(helloWorld.sayHello(who));
         } catch (Exception exception) {
             exception.printStackTrace();
         }
