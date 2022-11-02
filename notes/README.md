@@ -25,8 +25,17 @@ Quando existir a necessidade de comunicação entre Java e aplicações não-Jav
 
 O RMI usa serialização deserialização para transmissão e recepção, por este motivo qualquer objeto que possa ser serializado pode ser usado como parâmetro ou retorno de método em RMI.
 
-Arquitetura de uma aplicação RMI
+Arquitetura de uma aplicação RMI:
+
 <img src="../images/rmi_application_architecture.png">
+
+O stub é um objeto que implemnta o padrão [proxy](https://refactoring.guru/pt-br/design-patterns/proxy) (design patterns). Através desse objeto, o código cliente invoca os métodos remotos. Esse tipo de implementação faz com que seja transparante para o código cliente que o objeto que ele está usando é remoto, ou que será feito uma chamada remota (rede) para obter uma resposta quando invocado.
+
+O skeleton é o objeto responsável por receber a chamada de um stub, deserializar os parâmetros, fazer a ivocação local, obter uma resposta, serializa-la e enviar a resposta ao stub que invocou a chamada.
+
+Processo de localização de serviços (objetos remotos):
+
+<img src="../images/process_to_locate_rmi_service.png">
 
 ### 🔗 Recursos
 - [Docs Java RMI](https://docs.oracle.com/javase/tutorial/rmi/index.html)
