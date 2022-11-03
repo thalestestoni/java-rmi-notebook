@@ -9,7 +9,7 @@ As pastas pricipais deste reposítório são:
 - [notes](./notes/): Anotações sobre conceitos e arquitetura sobre RMI e Java RMI.
 - [pratice](./pratice/): Aplicações práticas para validação do Java RMI.
 
-### 👨‍💻 Estrutura de 'pratice'
+### 👨‍💻 Estrutura das práticas
 
 Aqui está um resumo de cada prática dentro do diretório pratice:
 
