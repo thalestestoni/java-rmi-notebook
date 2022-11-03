@@ -37,6 +37,12 @@ Processo de localização de serviços (objetos remotos):
 
 <img src="../images/process_to_locate_rmi_service.png">
 
+O client localiza os objetos remotos que estão registrados em um RMI Registry, que opera pela resolução de nomes registrados de forma semelhante a um serviço DNS. Ao obter um endereço de registro de um RMI Service, o client pode obter uma referência ao objeto remoto e operar a invocação de seus métodos.
+
+### Aplicação Java RMI
+
+
+
 🚧 In progress...
 
 ### 🔗 Recursos

@@ -1,3 +1,5 @@
+package helloWorld;
+
 import java.rmi.Naming;
 
 public class RMIClient {
